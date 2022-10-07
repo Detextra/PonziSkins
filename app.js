@@ -1,16 +1,11 @@
-// app.js
-
 const http = require('http');
 
-// Create an instance of the http server to handle HTTP requests
-let app = http.createServer((req, res) => {
-    // Set a response type of plain text for the response
+// creation of the node server
+let interface = http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-
-    // Send back a response and end the connection
-    res.end('Hello World!\n');
+    res.end('Ponzi skins\n');
 });
 
-// Start the server on port 3000
-app.listen(3000, '127.0.0.1');
-console.log('Node server running on port 3000');
+// utilisation of the port 3000
+interface.listen(3000, '127.0.0.1');
+console.log('Server running on http://localhost:3000/');
