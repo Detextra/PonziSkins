@@ -24,7 +24,7 @@ for (let i=0; i<10; i++) {
 
 console.log(skins.length);
 //console.log(skins);
-/*console.log(skins[1]['type']+' '+skins[1]['skin']); // to get the type or the skin of an item
+/*console.log( skins[1]['type']+' '+skins[1]['skin']+' '+skins[1]['state'] ); // to get the type or the skin of an item
 var skin1 = skins[1]['prices'].filter(function (price) {
     return price.seller == "buff163"; // change buff163 by the name of the market
 })[0]['price']; // to get the price of a specific market
