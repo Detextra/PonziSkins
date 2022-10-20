@@ -1,4 +1,9 @@
 Vue.use(VueCharts);
+      var cart = [] // import cart
+      var cartType = []
+      for (var i=0; i<cart.length; i++) {
+        cartType.push(cart[i]['type']);
+    }
       var app = new Vue({
         el: '#app',
         data: function data() {
@@ -6,7 +11,8 @@ Vue.use(VueCharts);
             dataentry: null,
             datalabel: null,
             labels: ['React', 'Vanilla JS', 'JQuery', 'VueJS'],
-            dataset: [5, 10, 15, 25] // change it with the cart dataset
+            
+            dataset: cartType // change it with the cart dataset
           };
         },
 
