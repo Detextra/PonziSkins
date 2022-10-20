@@ -73,4 +73,6 @@ addSkinToCart(1)
 
 const data = [db, cart, addSkinToCart, removeSkinFromCartWithIndex]
 
-export default data
+export function myCart() {
+  return data;
+}
