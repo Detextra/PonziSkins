@@ -1,9 +1,14 @@
+<!--
 <template>
-    <div id="skinlist">
+    <div>
+        <div v-for="(skin, index) in cart">
 
+        </div>
     </div>
+
 </template>
 
+-->
 
 <script>
 import Skin from "@/components/Skin";
