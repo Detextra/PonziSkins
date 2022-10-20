@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import './assets/main.css'
 
+import './assets/main.css'
+import router from './router'
 //createApp(App).mount('#app')
 
 
@@ -10,4 +10,4 @@ import Skin from './components/Skin.vue';
 
 
 import MySkins from './views/MySkins.vue';
-createApp(MySkins).mount("#myskins");
+createApp(MySkins).use(router).mount("#myskins");

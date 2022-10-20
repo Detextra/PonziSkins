@@ -1,19 +1,11 @@
 <template>
-    <div id="header">
-        <div id="headercontainer">
-            <div id="headeritem">
-                <a href="/#homepage">Home</a>
-            </div>
-
-            <div id="headeritem">
-                <a href="/#stats">Statitics</a>
-            </div>
-
-            <div id="headeritem">
-                <a href="/#stats">My skins</a>
-            </div>
-        </div>
-    </div>
+     <nav>
+  <router-link to="/">AllSkins</router-link> |
+  <router-link to="/DescriptionSkins"> DescriptionSkins</router-link> |
+  <router-link to="/graphique">graphique</router-link>
+  
+  </nav>
+  <router-view />
 </template>
 
 
