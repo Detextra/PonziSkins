@@ -1,5 +1,8 @@
 Vue.use(VueCharts);
-      var cart = [] // import cart
+	import { myCart } from './app.js';
+
+	var data = myCart();
+      var cart = data[1]; // import cart
       var cartType = []
       for (var i=0; i<cart.length; i++) {
         cartType.push(cart[i]['type']);
