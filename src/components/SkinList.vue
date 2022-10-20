@@ -7,11 +7,11 @@
     </div>
 
 </template>
-
 -->
 
 <script>
 import Skin from "@/components/Skin";
+import cart from "././app.js";
 
 export default {
     name:"SkinList",

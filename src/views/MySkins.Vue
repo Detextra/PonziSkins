@@ -12,6 +12,7 @@ import Header from "@/components/Header";
 import TopPage from "@/components/TopPage";
 import SkinList from "@/components/SkinList";
 import Footer from "@/components/Footer";
+import cart from "././app.js"
 
 export default{
     name : "MySkins",

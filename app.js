@@ -69,3 +69,6 @@ addSkinToCart(1)
 //console.log(db[1]['type']+' '+db[1]['skin']+' '+db[1]['state']);
 //removeSkinFromCartWithName("★ StatTrak™ Talon Knife Safari Mesh Well-Worn");
 //console.log(cart);
+
+
+export default cart
