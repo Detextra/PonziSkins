@@ -6,4 +6,8 @@ import './assets/main.css'
 
 
 import Skin from './components/Skin.vue';
-createApp(Skin).mount("#skin");
+//createApp(Skin).mount("#skin");
+
+
+import MySkins from './views/MySkins.vue';
+createApp(MySkins).mount("#myskins");

@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div id="myskins">
         <Header/>
-        <Top-page/>
+        <TopPage/>
         <SkinList/>
         <Footer/>
     </div>
@@ -14,12 +14,15 @@ import SkinList from "@/components/SkinList";
 import Footer from "@/components/Footer";
 
 export default{
-    name : "HomePage",
+    name : "MySkins",
     components: {Header, TopPage, SkinList, Footer}
 }
 </script>
 
 
 <style>
-
+#myskins{
+    background-color: #eeeeee;
+    margin: 0;
+}
 </style>
