@@ -71,4 +71,6 @@ addSkinToCart(1)
 //console.log(cart);
 
 
-export default cart
+const data = [db, cart, addSkinToCart, removeSkinFromCartWithIndex]
+
+export default data
