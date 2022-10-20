@@ -22,16 +22,13 @@ for (let i=0; i<10; i++) {
     skinsPie[0]['names'].push(skins[i]['type']);
 }
 
-// 'Shopping cart' to add skins in it
-
-
-console.log(skins.length);
+//console.log(db[1]['type']+' '+db[1]['skin']+' '+db[1]['state']);
 //console.log(skins);
-nameSkin = skins[1]['type']+' '+skins[1]['skin']+' '+skins[1]['state']; // to get the type or the skin of an item
+/*console.log(skins[1]['type']+' '+skins[1]['skin']); // to get the type or the skin of an item
 var skin1 = skins[1]['prices'].filter(function (price) {
     return price.seller == "buff163"; // change buff163 by the name of the market
 })[0]['price']; // to get the price of a specific market
-console.log(skin1);
+console.log(skin1);*/
 
 //console.log(skins[1]);
 
@@ -41,4 +38,34 @@ var layout = {
     width: 500
 };
 
+// 'Shopping cart' to add skin in it
+var cart = []
 
+function addSkinToCart (index) {
+    cart.push(db[index]);
+}
+
+function removeSkinFromCartWithIndex (index) {
+    cart.push(db[index]);
+}
+
+function removeSkinFromCartWithObject (skin) {
+    for (var i=0; i<cart.length; i++) {
+        if ( Object.deepEquals( JSON.parse(cart[i]) , JSON.parse(skin)) ) {
+            cart.pop(i);
+        }
+    }
+}
+
+function removeSkinFromCartWithName (name) {
+    for (var i=0; i<cart.length; i++) {
+        if ( (""+cart[1]['type']+" "+cart[1]['skin']+" "+cart[1]['state'] == ""+name) ||  (""+cart[1]['type']+""+cart[1]['skin']+""+cart[1]['state'] == ""+name) ) {
+            cart.pop(i);
+        }
+    }
+}
+
+addSkinToCart(1)
+//console.log(db[1]['type']+' '+db[1]['skin']+' '+db[1]['state']);
+//removeSkinFromCartWithName("★ StatTrak™ Talon Knife Safari Mesh Well-Worn");
+//console.log(cart);
